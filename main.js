@@ -35,9 +35,10 @@ function getRecipeData(recipeList) {
              result.body.map(result =>
                  console.log(
 
-                     result.title + " -- " + "Weight Watchers Smart Points: " + result.weightWatcherSmartPoints + " -- Instructions: " + result.instructions
-                 )
-             )
+                     result.title + " -- " + "Weight Watchers Smart Points: " + 
+                     result.weightWatcherSmartPoints + " -- Instructions: " + result.instructions
+                 );
+             );
          };
     });    
 };
