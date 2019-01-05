@@ -1,6 +1,6 @@
 const unirest = require('unirest');
 
-const API_KEY = "55bb291bc0mshb71679d528ed6e7p1b27f4jsna6a5a884556b";
+const API_KEY = "YOUR_API_KEY";
 const INGREDIENT_LIST = ['bananas', 'apples', 'cheese', 'crackers'];
 
 let requestString = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/find" +
@@ -34,6 +34,7 @@ function getRecipeData(recipeList) {
          if(result.status === 200){
              result.body.map(result =>
                  console.log(
+
                      result.title + " -- " + "Weight Watchers Smart Points: " + result.weightWatcherSmartPoints + " -- Instructions: " + result.instructions
                  )
              )
