@@ -34,7 +34,6 @@ function getRecipeData(recipeList) {
          if(result.status === 200){
              result.body.map(result =>
                  console.log(
-
                      result.title + " -- " + "Weight Watchers Smart Points: " + 
                      result.weightWatcherSmartPoints + " -- Instructions: " + result.instructions
                  );
